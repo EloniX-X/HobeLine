@@ -10,7 +10,7 @@ list all (directories)
 move me back - moves you back
 
 
-Sunday Febuary 11th 2024 woah its 2024\n
+Sunday Febuary 11th 2024 
 added config options
 started on superlocksmither app for file encryption
 minor coeditor improvements soon
