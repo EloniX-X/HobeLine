@@ -1,0 +1,14 @@
+[defaults]
+defaultdirectory = ""
+
+[melol]
+name = "eloni"
+age = "15"
+
+[theme]
+maincolor = "orange"
+secondcolor = "yellow"
+
+[special]
+ok = "hi"
+yes = "hi"

@@ -1,0 +1,29 @@
+//password manager
+//super locker smith
+use eframe::egui;
+
+fn main() -> Result<(), eframe::Error> {
+    //env_logger::init(); // Log to stderr (if you run with `RUST_LOG=debug`).
+
+    let options = eframe::NativeOptions {
+        viewport: egui::ViewportBuilder::default().with_inner_size([840.0, 432.0]),
+        ..Default::default()
+    };
+
+    // Our application state:
+
+    eframe::run_simple_native("Super Locker Smith", options, move |ctx, _frame| {
+        egui::CentralPanel::default().show(ctx, |ui| {
+            ui.heading("Super Locker Smith");
+            egui::Window::new("Do you want to quit?")
+            .collapsible(false)
+            .resizable(false)
+            .show(ctx, |ui| {
+                ui.horizontal(|ui| {
+                    ui.label("do you have a keyphrase")
+                });
+            });
+
+        });
+    })
+}
